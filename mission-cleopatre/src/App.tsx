@@ -11,7 +11,6 @@ const char = [
 		charName: "Idefix",
 		charOrigin: "gaulois",
 		imgSrc: "./src/Images/idefix.jpg",
-		description: "",
 		shortenedLegend: "",
 		fullLegend: "",
 	},
@@ -20,7 +19,14 @@ const char = [
 		charName: "Cléopâtre",
 		charOrigin: "égyptien",
 		imgSrc: "./src/Images/cleopatre.jpg",
-		description: "",
+		shortenedLegend: "",
+		fullLegend: "",
+	},
+
+	{
+		charName: "César",
+		charOrigin: "romain",
+		imgSrc: "./src/Images/cesar.jpg",
 		shortenedLegend: "",
 		fullLegend: "",
 	},
@@ -29,7 +35,6 @@ const char = [
 		charName: "Numérobis",
 		charOrigin: "égyptien",
 		imgSrc: "./src/Images/numerobis.jpg",
-		description: "",
 		shortenedLegend: "",
 		fullLegend: "",
 	},
@@ -38,7 +43,6 @@ const char = [
 		charName: "Astérix",
 		charOrigin: "gaulois",
 		imgSrc: "./src/Images/asterix.jpg",
-		description: "",
 		shortenedLegend: "",
 		fullLegend: "",
 	},
@@ -47,7 +51,6 @@ const char = [
 		charName: "Caius Antivirus",
 		charOrigin: "romain",
 		imgSrc: "./src/Images/caius-antivirus.jpg",
-		description: "",
 		shortenedLegend: "",
 		fullLegend: "",
 	},
@@ -56,7 +59,6 @@ const char = [
 		charName: "Cartapus",
 		charOrigin: "romain",
 		imgSrc: "./src/Images/cartapus.jpg",
-		description: "",
 		shortenedLegend: "",
 		fullLegend: "",
 	},
@@ -65,7 +67,6 @@ const char = [
 		charName: "Obélix",
 		charOrigin: "gaulois",
 		imgSrc: "./src/Images/obelix.jpg",
-		description: "",
 		shortenedLegend: "",
 		fullLegend: "",
 	},
@@ -73,7 +74,6 @@ const char = [
 		charName: "Amonbeaufils",
 		charOrigin: "égyptien",
 		imgSrc: "./src/Images/amonbeaufils.jpg",
-		description: "",
 		shortenedLegend: "",
 		fullLegend: "",
 	},
@@ -82,12 +82,10 @@ const char = [
 		charName: "Panoramix",
 		charOrigin: "gaulois",
 		imgSrc: "./src/Images/panoramix.jpg",
-		description: "",
 		shortenedLegend: "",
 		fullLegend: "",
 	},
 ];
-
 
 function App() {
 
@@ -102,7 +100,6 @@ function App() {
 			</section>
 		</>
 	);
-
 }
 
 export default App;
