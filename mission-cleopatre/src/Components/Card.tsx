@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import '..Style/Card.css'
 interface charProps {
   characterList: TestcharacterList[];
