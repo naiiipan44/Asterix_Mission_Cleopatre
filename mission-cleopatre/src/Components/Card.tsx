@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import '../Style/Card.css'
 interface charProps {
@@ -23,8 +24,9 @@ function Card ({characterList} : charProps) {
 		))}
   </div>
 
+
   )
 }
 
 
-export default Card
+export default Card;
