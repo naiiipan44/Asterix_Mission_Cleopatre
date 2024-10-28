@@ -26,4 +26,4 @@ function Card ({characterList} : charProps) {characterList.map((character) => {
 }
 
 
-export default Card
+export default Card;
