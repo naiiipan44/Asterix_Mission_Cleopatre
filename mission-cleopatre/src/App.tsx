@@ -87,6 +87,7 @@ const char = [
 	},
 ];
 
+
 function App() {
 
 	return (
@@ -100,6 +101,7 @@ function App() {
 			</section>
 		</>
 	);
+
 }
 
 export default App;

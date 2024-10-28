@@ -18,9 +18,22 @@ function Card ({characterList} : charProps) {
     setInput(event.target.value);
   }
 
+  const [moreDetails, setMoreDetails] = useState(characterList.shortenedLegend);
+
+
+
  return(
   <>
-    <input onChange={handleChange} type="text" placeholder='Filtre les personnages !'></input>
+    <div id="filter-and-buttons">
+      <div id="filter">
+        <input onChange={handleChange} type="text" placeholder='Filtre les personnages !'></input></div>
+      <div id="buttons">
+          <button type="button" >Gaulois</button>
+          <button type="button" >Romain</button>
+          <button type="button" >Égyptien</button>
+      </div>
+    </div>
+    
     <div className='charDiv'>
       {characterList.filter((yourmom) => (
         yourmom.charName.includes(input)
@@ -30,7 +43,11 @@ function Card ({characterList} : charProps) {
             <figcaption>
               <h2>{character.charName}</h2>
               <h3>{character.charOrigin}</h3>
-              {/* <p>{character.description}</p> */}
+              <p>{character.description}</p>
+              <p>{moreDetails}</p>
+          <button type="button" onClick={() => (
+            setMoreDetails(moreDetails === character.shortenedLegend ? character.fullLegend : character.shortenedLegend)
+            )}>Plus de détails !</button>
             </figcaption>
           </figure>
 		))}
