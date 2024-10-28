@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 
-=======
+// =======
 import "./App.css";
 import Card from "./Components/Card";
 import Header from "./Components/Header";
@@ -10,85 +10,83 @@ const char = [
 	{
 		charName: "Idefix",
 		charOrigin: "gaulois",
-		imgSrc: "/Images/idefix.jpg",
+		imgSrc: "./src/Images/idefix.jpg",
 		description: "",
 	},
 
 	{
 		charName: "Astérix",
 		charOrigin: "gaulois",
-		imgSrc: "/Images/asterix.jpg",
+		imgSrc: "./src/Images/asterix.jpg",
 		description: "",
 	},
 
 	{
 		charName: "Obélix",
 		charOrigin: "gaulois",
-		imgSrc: "/Images/obelix.jpg",
+		imgSrc: "./src/Images/obelix.jpg",
 		description: "",
 	},
 	{
 		charName: "Panoramix",
 		charOrigin: "gaulois",
-		imgSrc: "/Images/panoramix.jpg",
+		imgSrc: "./src/Images/panoramix.jpg",
 		description: "",
 	},
 	{
 		charName: "César",
 		charOrigin: "romain",
-		imgSrc: "/Images/cesar.jpg",
+		imgSrc: "./src/Images/cesar.jpg",
 		description: "",
 	},
 	{
 		charName: "Caius Antivirus",
 		charOrigin: "romain",
-		imgSrc: "/Images/caius-antivirus.jpg",
+		imgSrc: "./src/Images/caius-antivirus.jpg",
 		description: "",
 	},
 	{
 		charName: "Cartapus",
 		charOrigin: "romain",
-		imgSrc: "/Images/cartapus.jpg",
+		imgSrc: "./src/Images/cartapus.jpg",
 		description: "",
 	},
 	{
 		charName: "Cléopâtre",
 		charOrigin: "égyptien",
-		imgSrc: "/Images/cleopatre.jpg",
+		imgSrc: "./src/Images/cleopatre.jpg",
 		description: "",
 	},
 	{
 		charName: "Numérobis",
 		charOrigin: "égyptien",
-		imgSrc: "/Images/numerobis.jpg",
+		imgSrc: "./src/Images/numerobis.jpg",
 		description: "",
 	},
 	{
 		charName: "Amonbeaufils",
 		charOrigin: "égyptien",
-		imgSrc: "/Images/amonbeaufils.jpg",
+		imgSrc: "./src/Images/amonbeaufils.jpg",
 		description: "",
 	},
 ];
->>>>>>> 62251a923bb542b29de947b787d3f375c944b7e3
+// >>>>>>> 62251a923bb542b29de947b787d3f375c944b7e3
 
 function App() {
 	// const [count, setCount] = useState(0)
 
-
-=======
 	return (
 		<>
 			<Header />
 			<section>
-				<Card />
+				<Card characterList={char} />
 			</section>
 			<section>
 				<Footer />
 			</section>
 		</>
 	);
->>>>>>> 62251a923bb542b29de947b787d3f375c944b7e3
+	// >>>>>>> 62251a923bb542b29de947b787d3f375c944b7e3
 }
 
 export default App;
