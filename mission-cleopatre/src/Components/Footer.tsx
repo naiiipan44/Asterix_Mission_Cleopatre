@@ -1,10 +1,11 @@
-import '../Style/Footer.css'
+import "../Style/Footer.css";
 
-function Footer () {
+function Footer() {
   return (
-    <>
-    </>
-  )
+    <footer>
+      <p>@ copyright mission Cléopatre à la Wild 2024</p>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
