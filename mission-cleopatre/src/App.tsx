@@ -1,10 +1,9 @@
 // import { useState } from 'react'
 
 import "./App.css";
-import Card from "./Components/Card"
+import Card from "./Components/Card";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-
 
 const char = [
 	{
@@ -89,7 +88,6 @@ const char = [
 
 
 function App() {
-
 	return (
 		<>
 			<Header />
