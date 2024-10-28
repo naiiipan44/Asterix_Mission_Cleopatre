@@ -34,15 +34,18 @@ header {
 }
 
 .logoasterix {
-  height: 110px;
-  width: 180px;
+  height: 100px;
+  width: 160px;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
   box-shadow: none;
   border-radius: 100%;
   overflow: hidden;
-  border: 20px white;
+  border: 1px solid white;
+  background-color: white;
+  padding: 2px;
+  margin: 8px;
 }
 
 .logoasterix:hover {
