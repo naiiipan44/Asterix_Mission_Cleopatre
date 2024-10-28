@@ -1,7 +1,7 @@
 function Card () {
   return(
     <figure>
-<img src={imgSrc} alt=`image de ${charName}`>
+      {/* <img src={imgSrc} alt = {`image de ${charName}`}/> */}
     </figure>
   )
 }
