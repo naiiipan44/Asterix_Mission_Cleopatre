@@ -1,9 +1,6 @@
 // import { useState } from 'react'
 
-<<<<<<< HEAD
-// =======
-=======
->>>>>>> a3b06071139d212545abd4db5ed2689e463e9524
+
 import "./App.css";
 // import Card from "./Components/Card"
 import Header from "./Components/Header";
@@ -25,9 +22,6 @@ const char = [
 	{
 		charName: "Idefix",
 		charOrigin: "gaulois",
-<<<<<<< HEAD
-		imgSrc: "./src/Images/idefix.jpg",
-=======
 		imgSrc: "/Images/idefix.jpg",
 		shortenedLegend: "",
 		fullLegend: "",
@@ -37,7 +31,6 @@ const char = [
 		charName: "César",
 		charOrigin: "romain",
 		imgSrc: "/Images/cesar.jpg",
->>>>>>> a3b06071139d212545abd4db5ed2689e463e9524
 		description: "",
 		shortenedLegend: "",
 		fullLegend: "",
@@ -96,7 +89,6 @@ const char = [
 		shortenedLegend: "",
 		fullLegend: "",
 	},
-<<<<<<< HEAD
 	{
 		charName: "Panoramix",
 		charOrigin: "gaulois",
@@ -133,9 +125,6 @@ const char = [
 		imgSrc: "./src/Images/numerobis.jpg",
 		description: "",
 	},
-=======
-
->>>>>>> a3b06071139d212545abd4db5ed2689e463e9524
 	{
 		charName: "Amonbeaufils",
 		charOrigin: "égyptien",
@@ -154,8 +143,7 @@ const char = [
 		fullLegend: "",
 	},
 ];
-<<<<<<< HEAD
-// >>>>>>> 62251a923bb542b29de947b787d3f375c944b7e3
+
 
 function App() {
 	// const [count, setCount] = useState(0)
@@ -171,9 +159,6 @@ function App() {
 			</section>
 		</>
 	);
-	// >>>>>>> 62251a923bb542b29de947b787d3f375c944b7e3
 }
-=======
->>>>>>> a3b06071139d212545abd4db5ed2689e463e9524
 
 export default App;
