@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 
 import "./App.css";
 import Card from "./Components/Card";
@@ -11,7 +11,8 @@ const char = [
 		charOrigin: "gaulois",
 		imgSrc: "./src/Images/idefix.jpg",
 		shortenedLegend: "tu mets ce que tu veux",
-		fullLegend: "ksdjkadsfhbhdfasdf;lvih;daknfaldifhbkadjfglSLGNDKNVLDDLBZNDFKNLFNASNGWLGIHNL;FHBLNBLKBNlnlkdfbknadflid,arngl,zdnlidnbknljblzjdlgksm;dljfbgdnf., a.dnfg/.xnkcllzkdng,ndlcnldzjhcljzldkfgadfng.ldnflhid;glk",
+		fullLegend:
+			"ksdjkadsfhbhdfasdf;lvih;daknfaldifhbkadjfglSLGNDKNVLDDLBZNDFKNLFNASNGWLGIHNL;FHBLNBLKBNlnlkdfbknadflid,arngl,zdnlidnbknljblzjdlgksm;dljfbgdnf., a.dnfg/.xnkcllzkdng,ndlcnldzjhcljzldkfgadfng.ldnflhid;glk",
 	},
 
 	{
@@ -86,20 +87,54 @@ const char = [
 	},
 ];
 
-
 function App() {
+	const [input, setInput] = useState<string>("");
+	const handleChange = (event) => {
+		console.log(input);
+		setInput(event.target.value);
+	};
+
+	const [newOrigin, setNewOrigin] = useState<string>("");
+
+
+
 	return (
 		<>
 			<Header />
 			<section>
-				<Card characterList={char} />
+			<div id="filter-and-buttons">
+				<div id="filter">
+					<input
+						onChange={handleChange}
+						type="text"
+						placeholder="Filtre les personnages !"
+					/>
+				</div>
+				<div id="buttons">
+					{char.map((elem,i) => (
+						<button type="button" onClick={() => setNewOrigin() }>{elem.charOrigin}</button>	
+					))}
+					
+					{/* <button type="button">Romain</button>
+					<button type="button">Égyptien</button> */}
+				</div>
+			</div>
+				<div className="charDiv">
+				{char
+					.filter((yourmom) => yourmom.charName.includes(input))
+					.map((character) => (
+					<div key={character.charName}>	
+						<Card characterList={character} />
+						
+					</div>
+					))}
+			</div>
 			</section>
 			<section>
 				<Footer />
 			</section>
 		</>
 	);
-
 }
 
 export default App;

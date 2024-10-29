@@ -12,50 +12,25 @@ interface charProps {
 }
 
 function Card({ characterList }: charProps) {
-	const [input, setInput] = useState<string>("");
-	const handleChange = (event) => {
-		console.log(input);
-		setInput(event.target.value);
-	};
-
+	
 	const [moreDetails, setMoreDetails] = useState(characterList.shortenedLegend);
-
 	return (
 		<>
-			<div id="filter-and-buttons">
-				<div id="filter">
-					<input
-						onChange={handleChange}
-						type="text"
-						placeholder="Filtre les personnages !"
-					></input>
-				</div>
-				<div id="buttons">
-					<button type="button">Gaulois</button>
-					<button type="button">Romain</button>
-					<button type="button">Égyptien</button>
-				</div>
-			</div>
 
-			<div className="charDiv">
-				{characterList
-					.filter((yourmom) => yourmom.charName.includes(input))
-					.map((character) => (
-						<figure key={character.charName}>
-							<img src={character.imgSrc} alt={character.charName} />
+      <figure key={characterList.charName}>
+							<img src={characterList.imgSrc} alt={characterList.charName} />
 							<figcaption>
-								<h2>{character.charName}</h2>
-								<h3>{character.charOrigin}</h3>
-								<p>{character.description}</p>
+								<h2>{characterList.charName}</h2>
+								<h3>{characterList.charOrigin}</h3>
 								<p>{moreDetails}</p>
 								<button
 									type="button"
-									key={character.charName}
+									key={characterList.charName}
 									onClick={() =>
 										setMoreDetails(
-											moreDetails === character.shortenedLegend
-												? character.fullLegend
-												: character.shortenedLegend,
+											moreDetails === characterList.shortenedLegend
+												? characterList.fullLegend
+												: characterList.shortenedLegend,
 										)
 									}
 								>
@@ -63,8 +38,7 @@ function Card({ characterList }: charProps) {
 								</button>
 							</figcaption>
 						</figure>
-					))}
-			</div>
+			
 		</>
 	);
 }
