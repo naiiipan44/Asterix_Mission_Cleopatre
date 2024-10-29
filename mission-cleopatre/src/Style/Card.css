@@ -1,18 +1,18 @@
-img {
-
-  width: 20vw;
-  height: 20vh;
-  object-fit: cover;
-  border-radius: 30px;
-  margin-top: 3vh;
-  margin: 2vh 2vw 2vw;
-  border: #a4031f 3px solid;
-
+figure > img {
+	width: 20vw;
+	height: 20vh;
+	object-fit: cover;
+	border-radius: 30px;
+	margin-top: 3vh;
+	margin: 2vh 2vw 2vw;
 }
 
 figcaption {
-	text-align: center;
-}
+
+  text-align: center;
+  line-height: 200%;
+
+
 
 .charDiv {
 	display: grid;
@@ -23,11 +23,10 @@ figcaption {
 
 figure {
 
-  border: #a4031f 3px solid;
-  border-radius: 30px;
-  margin: 2vh 2vw 2vh 2vw;
-  background-color: white;
-
+	border-radius: 30px;
+	margin: 2vh 2vw 2vh 2vw;
+	background-color: bisque;
+	box-shadow: 10px 10px 20px rgba(121, 120, 120, 0.172);
 }
 
 button {
@@ -37,12 +36,12 @@ button {
 	padding: 10px 20px;
 	text-align: center;
 	font-size: 16px;
-	margin: 5px;
-	margin-bottom: 16px;
+	margin: 10px;
 	border-radius: 5px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 	font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+
 }
 
 button:hover {
@@ -61,4 +60,5 @@ input {
 	justify-content: center;
 	gap: 10px;
 	padding: 30px;
+	margin: 20px;
 }
