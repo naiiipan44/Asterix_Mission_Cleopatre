@@ -167,7 +167,7 @@ function App() {
 						.filter((yourmom) => yourmom.charName.includes(input))
 						.filter((pouet) => pouet.charOrigin === newOrigin)
 						.map((character) => (
-						<div key={character.charName}>	
+						<div className={character.charOrigin} key={character.charName}>	
 							<Card characterList={character} />
 						</div>
 						))}
