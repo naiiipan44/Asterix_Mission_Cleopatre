@@ -8,8 +8,11 @@ figure > img {
 }
 
 figcaption {
-	text-align: center;
-}
+
+  text-align: center;
+  line-height: 200%;
+
+
 
 .charDiv {
 	display: grid;
@@ -19,6 +22,7 @@ figcaption {
 }
 
 figure {
+
 	border-radius: 30px;
 	margin: 2vh 2vw 2vh 2vw;
 	background-color: bisque;
@@ -37,6 +41,7 @@ button {
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 	font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+
 }
 
 button:hover {
