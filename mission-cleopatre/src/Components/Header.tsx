@@ -5,9 +5,9 @@ function Header() {
     <header>
       <div>
         <img
+          className="logoasterix"
           src="./src/Images/logo3-normal.png"
           alt="logo"
-          className="logoasterix"
         />
       </div>
       <nav className="navlinks">
