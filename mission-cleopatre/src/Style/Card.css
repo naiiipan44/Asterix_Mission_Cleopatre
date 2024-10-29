@@ -1,10 +1,13 @@
 img {
-	width: 20vw;
-	height: 20vh;
-	object-fit: cover;
-	border-radius: 30px;
-	margin-top: 3vh;
-	margin: 2vh 2vw 2vw;
+
+  width: 20vw;
+  height: 20vh;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-top: 3vh;
+  margin: 2vh 2vw 2vw;
+  border: #a4031f 3px solid;
+
 }
 
 figcaption {
@@ -19,9 +22,12 @@ figcaption {
 }
 
 figure {
-	border: black 3px solid;
-	border-radius: 30px;
-	margin: 2vh 2vw 2vh 2vw;
+
+  border: #a4031f 3px solid;
+  border-radius: 30px;
+  margin: 2vh 2vw 2vh 2vw;
+  background-color: white;
+
 }
 
 button {
