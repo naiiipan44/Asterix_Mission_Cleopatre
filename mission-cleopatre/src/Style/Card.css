@@ -4,7 +4,8 @@ img {
   object-fit: cover;
   border-radius: 30px;
   margin-top: 3vh;
-  margin: 2vh 2vw 2vw
+  margin: 2vh 2vw 2vw;
+  border: #a4031f 3px solid;
 }
 
 .charDiv {
@@ -15,9 +16,10 @@ img {
 }
 
 figure {
-  border: black 3px solid;
+  border: #a4031f 3px solid;
   border-radius: 30px;
   margin: 2vh 2vw 2vh 2vw;
+  background-color: white;
 }
 
 button {
@@ -51,4 +53,3 @@ input {
   gap: 10px;
   padding: 30px;
 }
-
