@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from "react";
 
 import "./App.css";
 import Card from "./Components/Card";
@@ -106,39 +106,38 @@ function App() {
 
 	const [newOrigin, setNewOrigin] = useState<string>("");
 
-
-
 	return (
 		<>
 			<Header />
 			<section>
-			<div id="filter-and-buttons">
-				<div id="filter">
-					<input
-						onChange={handleChange}
-						type="text"
-						placeholder="Filtre les personnages !"
-					/>
-				</div>
-				<div id="buttons">
-					{char.map((elem,i) => (
-						<button type="button" onClick={() => setNewOrigin() }>{elem.charOrigin}</button>	
-					))}
-					
-					{/* <button type="button">Romain</button>
-					<button type="button">Égyptien</button> */}
-				</div>
-			</div>
-				<div className="charDiv">
-				{char
-					.filter((yourmom) => yourmom.charName.includes(input))
-					.map((character) => (
-					<div key={character.charName}>	
-						<Card characterList={character} />
-						
+				<div id="filter-and-buttons">
+					<div id="filter">
+						<input
+							onChange={handleChange}
+							type="text"
+							placeholder="Filtre les personnages !"
+						/>
 					</div>
-					))}
-			</div>
+					<div id="buttons">
+						{char.map((elem, i) => (
+							<button type="button" onClick={() => setNewOrigin()}>
+								{elem.charOrigin}
+							</button>
+						))}
+
+						{/* <button type="button">Romain</button>
+					<button type="button">Égyptien</button> */}
+					</div>
+				</div>
+				<div className="charDiv">
+					{char
+						.filter((yourmom) => yourmom.charName.includes(input))
+						.map((character) => (
+							<div key={character.charName}>
+								<Card characterList={character} />
+							</div>
+						))}
+				</div>
 			</section>
 			<section>
 				<Footer />
