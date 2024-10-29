@@ -4,6 +4,7 @@ img {
   object-fit: cover;
   border-radius: 30px;
   margin-top: 3vh;
+  margin: 2vh 2vw 2vw
 }
 
 .charDiv {

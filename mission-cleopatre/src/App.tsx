@@ -10,16 +10,16 @@ const char = [
 		charName: "Idefix",
 		charOrigin: "gaulois",
 		imgSrc: "./src/Images/idefix.jpg",
-		shortenedLegend: "",
-		fullLegend: "",
+		shortenedLegend: "tu mets ce que tu veux",
+		fullLegend: "ksdjkadsfhbhdfasdf;lvih;daknfaldifhbkadjfglSLGNDKNVLDDLBZNDFKNLFNASNGWLGIHNL;FHBLNBLKBNlnlkdfbknadflid,arngl,zdnlidnbknljblzjdlgksm;dljfbgdnf., a.dnfg/.xnkcllzkdng,ndlcnldzjhcljzldkfgadfng.ldnflhid;glk",
 	},
 
 	{
 		charName: "Cléopâtre",
 		charOrigin: "égyptien",
 		imgSrc: "./src/Images/cleopatre.jpg",
-		shortenedLegend: "",
-		fullLegend: "",
+		shortenedLegend: "un autre texte",
+		fullLegend: "more text",
 	},
 
 	{
