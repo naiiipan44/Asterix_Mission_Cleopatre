@@ -9,6 +9,7 @@ figure > img {
 
 figcaption {
   text-align: center;
+  line-height: 200%;
 }
 
 .charDiv {
@@ -21,8 +22,8 @@ figcaption {
 figure {
   border-radius: 30px;
   margin: 2vh 2vw 2vh 2vw;
-  background-color: bisque;
-  box-shadow: 10px 10px 20px rgba(121, 120, 120, 0.172);
+  background-color: rgb(245, 226, 203);
+  box-shadow: 10px 10px 20px rgba(71, 71, 71, 0.172);
 }
 
 button {
@@ -37,6 +38,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  box-shadow: 10px 10px 20px rgba(71, 71, 71, 0.172);
 }
 
 button:hover {
