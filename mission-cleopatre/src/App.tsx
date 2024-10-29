@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 
 import "./App.css";
 import Card from "./Components/Card";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+
 
 const char = [
 	{
@@ -99,46 +100,85 @@ const char = [
 
 function App() {
 	const [input, setInput] = useState<string>("");
+	const [goFilter, setGoFilter] = useState(true);
+
+	const handleFilter = () => {
+		setGoFilter(!goFilter);
+	}
+
 	const handleChange = (event) => {
 		console.log(input);
 		setInput(event.target.value);
 	};
 
+	const buttonRefG = useRef("");
+	const buttonRefR = useRef("");
+	const buttonRefE = useRef("");
+
 	const [newOrigin, setNewOrigin] = useState<string>("");
 
+	const handleButtonG= () => {
+		let newRefG = buttonRefG.current.innerText;
+		console.log(newRefG)
+		setNewOrigin(newOrigin === newRefG ? !newRefG : newRefG)
+	};
+
+	const handleButtonR= () => {
+		let newRefR = buttonRefR.current.innerText;
+		console.log(newRefR)
+		setNewOrigin(newOrigin === newRefR ? "" : newRefR)
+	};
+
+	const handleButtonE= () => {
+		let newRefE = buttonRefE.current.innerText;
+		console.log(newRefE)
+		setNewOrigin(newOrigin === newRefE ? "" : newRefE)
+
+	};
 
 
 	return (
 		<>
 			<Header />
 			<section>
-			<div id="filter-and-buttons">
-				<div id="filter">
-					<input
-						onChange={handleChange}
-						type="text"
-						placeholder="Filtre les personnages !"
-					/>
-				</div>
-				<div id="buttons">
-					{char.map((elem,i) => (
-						<button type="button" onClick={() => setNewOrigin() }>{elem.charOrigin}</button>	
-					))}
-					
-					{/* <button type="button">Romain</button>
-					<button type="button">Égyptien</button> */}
-				</div>
-			</div>
-				<div className="charDiv">
-				{char
-					.filter((yourmom) => yourmom.charName.includes(input))
-					.map((character) => (
-					<div key={character.charName}>	
-						<Card characterList={character} />
-						
+				<div id="filter-and-buttons">
+					<div id="filter">
+						<input
+							onChange={handleChange}
+							type="text"
+							placeholder="Filtre les personnages !"
+						/>
 					</div>
-					))}
-			</div>
+				<div id="buttons">
+					<button type="button" onClick={handleButtonG} ref={buttonRefG}>gaulois
+					</button>
+					<button type="button" onClick={handleButtonR} ref={buttonRefR}>romain
+					</button>
+					<button type="button" onClick={handleButtonE} ref={buttonRefE}>égyptien
+					</button>
+					<button type="button" onClick={handleFilter}>Filtrer ?</button>
+				</div>	
+					<div className="charDiv">
+						{goFilter ? char
+						.filter((yourmom) => yourmom.charName.includes(input))
+						.map((character) => (
+						<div key={character.charName}>	
+							<Card characterList={character} />
+						</div>)) : char
+						.filter((yourmom) => yourmom.charName.includes(input))
+						.filter((pouet) => pouet.charOrigin === newOrigin)
+						.map((character) => (
+						<div key={character.charName}>	
+							<Card characterList={character} />
+						</div>
+						))}
+					</div>
+				</div>		
+				{/* </div> 
+						{char.filter((pouet) => pouet.charOrigin === newOrigin).map((elem) => (
+							< Card characterList={elem}/>	
+					))} 
+					</div> */}
 			</section>
 			<section>
 				<Footer />
